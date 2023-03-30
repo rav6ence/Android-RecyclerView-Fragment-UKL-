@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="185dp"
+        android:layout_height="185dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="desc"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="Rp.999999"
+        android:textColor="@color/black"
+        android:textSize="22dp"/>
+
+    <ImageButton
+        android:id="@+id/favorite_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:background="@drawable/ic_baseline_favorite_border_24"/>
+</LinearLayout>

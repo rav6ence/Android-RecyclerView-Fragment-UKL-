@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="28dp"/>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Description"/>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:maxLines="1"
+                android:textSize="26dp"
+                android:textColor="@color/black"
+                android:text="Rp.99999999"/>
+        </LinearLayout>
+        
+        <ImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_baseline_favorite_border_24"/>
+        
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
